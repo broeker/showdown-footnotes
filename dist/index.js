@@ -15,7 +15,7 @@ module.exports = function () {
     type: 'lang',
     filter: function filter(text) {
       return text.replace(/^\[\^([\d\w]+)\]:( |\n)((.+\n)*.+)$/mg, function (str, name, _, content) {
-        return '<small class="footnote" id="footnote-' + name + '"><a href="#footnote-' + name + '"><sup>[' + name + ']</sup></a>: ' + content + ' <a href="#backlink-' + name + '">^</a></small>';
+        return '<small class="footnote" id="footnote-' + name + '"><a href="#footnote-' + name + '"><sup>[' + name + ']</sup></a>: ' + content + ' <a href="#backlink-' + name + '">&#8617;</a></small>';
 
       });
     }
